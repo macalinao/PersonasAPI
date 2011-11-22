@@ -30,7 +30,7 @@ public interface NPCManager {
     public Class<? extends Trait> getTraitType(String name);
     
     /**
-     * Spawns an {@link NPC} with the given parameters.
+     * Creates an {@link NPC} with the given parameters.
      * 
      * @param name The name of the {@link NPC} as shown in-game. (Must be 16 characters or less)
      * @param location The location to spawn the (@link NPC} at.
@@ -38,10 +38,10 @@ public interface NPCManager {
      * @param persona  The {@link Persona} that this {@link NPC} possesses.
      * @return The {@link NPC} that was spawned.
      */
-    public NPC spawnNPC(String name, Location location, List<Trait> traits, Persona persona);
+    public NPC createNPC(String name, Location location, List<Trait> traits, Persona persona);
     
     /**
-     * Spawns an {@link NPC} with the given parameters.
+     * Creates an {@link NPC} with the given parameters.
      * 
      * @param id The internal ID of the {@link NPC}.
      *      If this ID is taken, then the {@link NPC} will not be spawned.
@@ -52,7 +52,7 @@ public interface NPCManager {
      * @param persona  The {@link Persona} that this {@link NPC} possesses.
      * @return The NPC that was spawned or the original NPC.
      */
-    public NPC spawnNPC(String id, String name, Location location, List<Trait> traits, Persona persona);
+    public NPC createNPC(String id, String name, Location location, List<Trait> traits, Persona persona);
     
     /**
      * Despawns the {@link NPC} with the given id if found and removes
