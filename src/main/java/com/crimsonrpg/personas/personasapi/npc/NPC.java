@@ -5,6 +5,7 @@
 package com.crimsonrpg.personas.personasapi.npc;
 
 import com.crimsonrpg.personas.personasapi.persona.Persona;
+import java.util.List;
 import org.bukkit.entity.HumanEntity;
 
 /**
@@ -40,6 +41,13 @@ public interface NPC extends HumanEntity {
      * @param trait The {@link Trait} to set.
      */
     public void setTrait(Trait trait);
+    
+    /**
+     * Gets a list of all of an NPC's traits.
+     * 
+     * @return 
+     */
+    public List<Trait> getTraits();
     
     /**
      * Gets the {@link Persona} this NPC is affiliated with.
