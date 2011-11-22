@@ -6,6 +6,7 @@ package com.crimsonrpg.personas.personasapi.npc;
 
 import com.crimsonrpg.personas.personasapi.persona.Persona;
 import java.util.List;
+import org.bukkit.Location;
 import org.bukkit.entity.HumanEntity;
 
 /**
@@ -57,9 +58,9 @@ public interface NPC extends HumanEntity {
     public Persona getPersona();
     
     /**
-     * Spawns this NPC.
+     * Spawns this NPC at the given location.
      */
-    public void spawn();
+    public void spawn(Location location);
     
     /**
      * Despawns this NPC.
