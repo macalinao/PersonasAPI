@@ -35,6 +35,13 @@ public interface NPC extends HumanEntity {
     public <T extends Trait> T getTrait(Class<T> type);
     
     /**
+     * Sets a {@link Trait} of this NPC.
+     * 
+     * @param trait The {@link Trait} to set.
+     */
+    public void setTrait(Trait trait);
+    
+    /**
      * Gets the {@link Persona} this NPC is affiliated with.
      * 
      * @return 
