@@ -2,11 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.crimsonrpg.personas.api.event.npc;
+package com.crimsonrpg.personas.personasapi.event.npc;
 
-import com.crimsonrpg.personas.api.event.EventType;
-import com.crimsonrpg.personas.api.event.PersonasEvent;
-import com.crimsonrpg.personas.api.npc.NPC;
+import com.crimsonrpg.personas.personasapi.event.EventType;
+import com.crimsonrpg.personas.personasapi.event.PersonasEvent;
+import com.crimsonrpg.personas.personasapi.npc.NPC;
 
 /**
  * Represents an NPC-related event.

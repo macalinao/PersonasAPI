@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.crimsonrpg.personas.api;
+package com.crimsonrpg.personas.personasapi;
 
-import com.crimsonrpg.personas.api.npc.NPCManager;
+import com.crimsonrpg.personas.personasapi.npc.NPCManager;
 
 /**
  * The main way to hook into Personas.

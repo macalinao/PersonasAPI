@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.crimsonrpg.personas.api.event.npc;
+package com.crimsonrpg.personas.personasapi.event.npc;
 
 import org.bukkit.event.CustomEventListener;
 import org.bukkit.event.Event;
