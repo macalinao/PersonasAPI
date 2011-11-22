@@ -17,10 +17,9 @@ public interface NPCManager {
      * <p>NOTE: Register {@link Trait}s in the constructor of your
      * plugin otherwise traits may not load correctly.
      * 
-     * @param <T> The {@link Trait} type.
-     * @param trait The class of the {@link Trait}.
+     * @param trait The type of the {@link Trait}.
      */
-    public <T extends Trait> void registerTrait(Class<T> trait);
+    public void registerTrait(Class<? extends Trait> type);
     
     /**
      * Spawns an {@link NPC} with the given parameters.
