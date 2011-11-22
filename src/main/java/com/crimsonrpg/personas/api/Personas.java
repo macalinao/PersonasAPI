@@ -4,9 +4,39 @@
  */
 package com.crimsonrpg.personas.api;
 
+import com.crimsonrpg.personas.api.npc.NPCManager;
+
 /**
  * The main way to hook into Personas.
  */
 public class Personas {
+    private static Personas instance = new Personas();
     
+    private NPCManager npcManager = null;
+    
+    private Personas() {}
+    
+    /**
+     * Gets the instance of Personas.
+     * 
+     * @return The Personas instance.
+     */
+    public static Personas getInstance() {
+        return instance;
+    }
+    
+    /**
+     * Gets the Personas NPC manager.
+     * 
+     * @return 
+     */
+    public static NPCManager getNPCManager() {
+        return getInstance().npcManager;
+    }
+    
+    public void setNPCManager(NPCManager npcManager) {
+        if (npcManager == null) {
+            this.npcManager = npcManager;
+        }
+    }
 }
