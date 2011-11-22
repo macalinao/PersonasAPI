@@ -57,7 +57,17 @@ public interface NPC extends HumanEntity {
     public Persona getPersona();
     
     /**
-     * Despawns this NPC and removes it from the server.
+     * Spawns this NPC.
+     */
+    public void spawn();
+    
+    /**
+     * Despawns this NPC.
      */
     public void despawn();
+    
+    /**
+     * Deletes this NPC from the server.
+     */
+    public void delete();
 }
