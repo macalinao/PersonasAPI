@@ -14,6 +14,8 @@ public enum EventType {
     
     NPC_DESPAWN,
     
+    NPC_LEFT_CLICK,
+    
     NPC_INTERACT,
     
     NPC_SPAWN;
