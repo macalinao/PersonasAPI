@@ -17,12 +17,6 @@
 
   <repositories>
       <repository>
-          <id>spout</id>
-          <name>spout</name>
-          <url>http://repo.getspout.org</url>
-      </repository>
-      
-      <repository>
           <id>bukkit</id>
           <name>bukkit</name>
           <url>http://repo.bukkit.org/content/groups/repo/</url>
@@ -31,16 +25,11 @@
   
   
   <dependencies>
+  
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>bukkit</artifactId>
       <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-    
-    <dependency>
-        <groupId>org.getspout</groupId>
-        <artifactId>spoutapi</artifactId>
-        <version>dev-SNAPSHOT</version>
     </dependency>
     
     <dependency>
@@ -49,5 +38,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
   </dependencies>
 </project>
