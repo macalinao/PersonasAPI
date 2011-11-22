@@ -22,6 +22,14 @@ public interface NPCManager {
     public void registerTrait(Class<? extends Trait> type);
     
     /**
+     * Gets a registered trait from its name.
+     * 
+     * @param name The name of the Trait.
+     * @return The Trait's type.
+     */
+    public Class<? extends Trait> getTraitType(String name);
+    
+    /**
      * Spawns an {@link NPC} with the given parameters.
      * 
      * @param name The name of the {@link NPC} as shown in-game. (Must be 16 characters or less)
