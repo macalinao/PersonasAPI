@@ -73,4 +73,11 @@ public interface NPC extends HumanEntity {
      * Deletes this NPC from the server.
      */
     public void delete();
+    
+    /**
+     * Gets the corresponding Bukkit handle of the NPC.
+     * 
+     * @return The Bukkit handle of the NPC.
+     */
+    public HumanEntity getBukkitHandle();
 }
