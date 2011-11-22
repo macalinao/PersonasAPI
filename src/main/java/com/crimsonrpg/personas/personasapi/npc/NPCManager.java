@@ -33,12 +33,11 @@ public interface NPCManager {
      * Creates an {@link NPC} with the given parameters.
      * 
      * @param name The name of the {@link NPC} as shown in-game. (Must be 16 characters or less)
-     * @param location The location to spawn the (@link NPC} at.
      * @param traits The {@link Trait}s of the {@link NPC}.
      * @param persona  The {@link Persona} that this {@link NPC} possesses.
      * @return The {@link NPC} that was spawned.
      */
-    public NPC createNPC(String name, Location location, List<Trait> traits, Persona persona);
+    public NPC createNPC(String name, List<Trait> traits, Persona persona);
     
     /**
      * Creates an {@link NPC} with the given parameters.
@@ -47,28 +46,26 @@ public interface NPCManager {
      *      If this ID is taken, then the {@link NPC} will not be spawned.
      *      Instead, the old NPC with that ID will be returned.
      * @param name The name of the {@link NPC} as shown in-game. (Must be 16 characters or less)
-     * @param location The location to spawn the (@link NPC} at.
      * @param traits The {@link Trait}s of the {@link NPC}.
      * @param persona  The {@link Persona} that this {@link NPC} possesses.
-     * @return The NPC that was spawned or the original NPC.
+     * @return The NPC that was created or the original NPC.
      */
-    public NPC createNPC(String id, String name, Location location, List<Trait> traits, Persona persona);
+    public NPC createNPC(String id, String name, List<Trait> traits, Persona persona);
     
     /**
-     * Despawns the {@link NPC} with the given id if found and removes
-     * it from the server permanently.
+     * Deletes the {@link NPC} from the server permanently.
      * 
-     * @param id The id of the {@link NPC} to despawn.
-     * @return True if the despawn was successful.
+     * @param id The id of the {@link NPC} to delete.
+     * @return True if the deletion was successful.
      */
-    public boolean despawnNPC(String id);
+    public boolean deleteNPC(String id);
     
     /**
-     * Despawns the given {@link NPC} and removes it from the server permanently.
+     * Deletes the given {@link NPC} from the server permanently.
      * 
-     * @param npc The {@link NPC} to despawn.
+     * @param npc The {@link NPC} to delete.
      */
-    public void despawnNPC(NPC npc);
+    public void deleteNPC(NPC npc);
     
     /**
      * Gets an {@link NPC} from its ID.

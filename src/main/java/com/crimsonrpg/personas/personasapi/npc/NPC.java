@@ -59,6 +59,8 @@ public interface NPC extends HumanEntity {
     
     /**
      * Spawns this NPC at the given location.
+     * 
+     * @param location The Location to spawn the NPC at.
      */
     public void spawn(Location location);
     
