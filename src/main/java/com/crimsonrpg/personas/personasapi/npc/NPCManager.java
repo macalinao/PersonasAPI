@@ -67,6 +67,14 @@ public interface NPCManager {
      */
     public void deleteNPC(NPC npc);
     
+    public void spawnNPC(String id, Location location);
+    
+    public void spawnNPC(NPC npc, Location location);
+    
+    public void despawnNPC(String id);
+    
+    public void despawnNPC(NPC npc);
+    
     /**
      * Gets an {@link NPC} from its ID.
      * 
