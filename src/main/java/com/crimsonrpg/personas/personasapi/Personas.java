@@ -35,7 +35,7 @@ public class Personas {
     }
     
     public void setNPCManager(NPCManager npcManager) {
-        if (npcManager == null) {
+        if (this.npcManager == null) {
             this.npcManager = npcManager;
         }
     }
