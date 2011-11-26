@@ -12,6 +12,7 @@ import org.bukkit.Location;
  * Represents a manager for {@link NPC}s.
  */
 public interface NPCManager {
+
     /**
      * Registers a {@link Trait} with the NPC manager.
      * <p>NOTE: Register {@link Trait}s in the constructor of your
@@ -20,7 +21,7 @@ public interface NPCManager {
      * @param trait The type of the {@link Trait}.
      */
     public void registerTrait(Class<? extends Trait> type);
-    
+
     /**
      * Gets a registered trait from its name.
      * 
@@ -28,7 +29,7 @@ public interface NPCManager {
      * @return The Trait's type.
      */
     public Class<? extends Trait> getTraitType(String name);
-    
+
     /**
      * Creates an {@link NPC} with the given parameters.
      * 
@@ -38,7 +39,7 @@ public interface NPCManager {
      * @return The {@link NPC} that was spawned.
      */
     public NPC createNPC(String name, List<Trait> traits, Persona persona);
-    
+
     /**
      * Creates an {@link NPC} with the given parameters.
      * 
@@ -51,7 +52,7 @@ public interface NPCManager {
      * @return The NPC that was created or the original NPC.
      */
     public NPC createNPC(String id, String name, List<Trait> traits, Persona persona);
-    
+
     /**
      * Deletes the {@link NPC} from the server permanently.
      * 
@@ -59,22 +60,22 @@ public interface NPCManager {
      * @return True if the deletion was successful.
      */
     public boolean deleteNPC(String id);
-    
+
     /**
      * Deletes the given {@link NPC} from the server permanently.
      * 
      * @param npc The {@link NPC} to delete.
      */
     public void deleteNPC(NPC npc);
-    
+
     public void spawnNPC(String id, Location location);
-    
+
     public void spawnNPC(NPC npc, Location location);
-    
+
     public void despawnNPC(String id);
-    
+
     public void despawnNPC(NPC npc);
-    
+
     /**
      * Gets an {@link NPC} from its ID.
      * 
@@ -82,11 +83,12 @@ public interface NPCManager {
      * @return The {@link NPC} associated with the given id.
      */
     public NPC getNPC(String id);
-    
+
     /**
      * Gets a list of all {@link NPC}s on the server.
      * 
      * @return A list of all {@link NPC}s.
      */
     public List<NPC> getNPCs();
+
 }
