@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
  */
 @Retention (RetentionPolicy.RUNTIME)
 @Target (ElementType.TYPE)
-public @interface TraitName {
+public @interface TraitId {
     /**
      * The name of the trait.
      * 
