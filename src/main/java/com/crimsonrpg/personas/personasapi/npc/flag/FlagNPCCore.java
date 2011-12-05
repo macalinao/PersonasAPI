@@ -26,8 +26,6 @@ public class FlagNPCCore extends GenericFlag<NPC> {
 
     private PlayerInventory inventory;
 
-    private Persona persona;
-
     public void load(ConfigurationSection cs) {
         location = new Location(
                 Bukkit.getWorld(cs.getString("loc.world")),
@@ -38,7 +36,6 @@ public class FlagNPCCore extends GenericFlag<NPC> {
                 (float) cs.getDouble("loc.yaw"));
         health = cs.getInt("health");
         //TODO: inventory = inventory.
-        //persona = Personas.get
     }
 
     public void save(ConfigurationSection cs) {
@@ -80,13 +77,4 @@ public class FlagNPCCore extends GenericFlag<NPC> {
     protected void setLocation(Location location) {
         this.location = location;
     }
-
-    public Persona getPersona() {
-        return persona;
-    }
-
-    protected void setPersona(Persona persona) {
-        this.persona = persona;
-    }
-
 }
