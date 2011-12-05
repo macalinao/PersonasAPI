@@ -12,7 +12,7 @@ import org.bukkit.entity.HumanEntity;
 /**
  * Represents an NPC.
  */
-public interface NPC extends HumanEntity {
+public interface NPC {
 
     /**
      * Gets the ID of this NPC.
