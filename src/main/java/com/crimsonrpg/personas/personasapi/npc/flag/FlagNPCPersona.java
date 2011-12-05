@@ -4,12 +4,13 @@
  */
 package com.crimsonrpg.personas.personasapi.npc.flag;
 
+import org.bukkit.configuration.ConfigurationSection;
+
 import com.crimsonrpg.flaggables.api.FlagId;
 import com.crimsonrpg.flaggables.api.GenericFlag;
 import com.crimsonrpg.personas.personasapi.Personas;
 import com.crimsonrpg.personas.personasapi.npc.NPC;
 import com.crimsonrpg.personas.personasapi.persona.Persona;
-import org.bukkit.configuration.ConfigurationSection;
 
 /**
  *
@@ -17,6 +18,7 @@ import org.bukkit.configuration.ConfigurationSection;
  */
 @FlagId("npc-persona")
 public class FlagNPCPersona extends GenericFlag<NPC> {
+
     private Persona persona;
 
     @Override
@@ -31,7 +33,7 @@ public class FlagNPCPersona extends GenericFlag<NPC> {
 
     @Override
     public void reset() {
-        persona = null;
+        persona = Personas.getPersonaManager().getPersona("default");
     }
 
     public Persona getPersona() {
@@ -41,4 +43,5 @@ public class FlagNPCPersona extends GenericFlag<NPC> {
     public void setPersona(Persona persona) {
         this.persona = persona;
     }
+
 }
