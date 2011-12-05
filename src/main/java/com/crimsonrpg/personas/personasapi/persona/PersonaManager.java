@@ -8,7 +8,18 @@ package com.crimsonrpg.personas.personasapi.persona;
  * Persona manager.
  */
 public interface PersonaManager {
-    public void registerPersona(Class<? extends Persona> type);
+    /**
+     * Registers a persona.
+     * 
+     * @param persona 
+     */
+    public void registerPersona(Persona persona);
     
+    /**
+     * Gets a persona.
+     * 
+     * @param id
+     * @return 
+     */
     public Persona getPersona(String id);
 }
