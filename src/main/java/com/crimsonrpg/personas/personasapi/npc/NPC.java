@@ -5,14 +5,14 @@
 package com.crimsonrpg.personas.personasapi.npc;
 
 import com.crimsonrpg.flaggables.api.Flaggable;
-import com.crimsonrpg.personas.personasapi.persona.Persona;
 import org.bukkit.Location;
 import org.bukkit.entity.HumanEntity;
+import org.bukkit.entity.LivingEntity;
 
 /**
  * Represents an NPC.
  */
-public interface NPC extends Flaggable {
+public interface NPC<T extends LivingEntity> extends Flaggable {
 
     /**
      * Spawns this NPC at the given location.
@@ -31,6 +31,6 @@ public interface NPC extends Flaggable {
      * 
      * @return The Bukkit handle of the NPC.
      */
-    public HumanEntity getBukkitHandle();
+    public T getBukkitHandle();
 
 }
