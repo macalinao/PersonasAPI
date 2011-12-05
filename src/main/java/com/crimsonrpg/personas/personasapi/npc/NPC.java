@@ -6,7 +6,6 @@ package com.crimsonrpg.personas.personasapi.npc;
 
 import com.crimsonrpg.flaggables.api.Flaggable;
 import com.crimsonrpg.personas.personasapi.persona.Persona;
-import java.util.List;
 import org.bukkit.Location;
 import org.bukkit.entity.HumanEntity;
 
@@ -14,13 +13,6 @@ import org.bukkit.entity.HumanEntity;
  * Represents an NPC.
  */
 public interface NPC extends Flaggable {
-
-    /**
-     * Gets the {@link Persona} this NPC is affiliated with.
-     * 
-     * @return 
-     */
-    public Persona getPersona();
 
     /**
      * Spawns this NPC at the given location.
