@@ -16,7 +16,7 @@ import org.bukkit.configuration.ConfigurationSection;
  * @author simplyianm
  */
 @FlagId("npc-persona")
-public class FlagPersona extends GenericFlag<NPC> {
+public class FlagNPCPersona extends GenericFlag<NPC> {
     private Persona persona;
 
     @Override
