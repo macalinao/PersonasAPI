@@ -7,6 +7,7 @@ package com.crimsonrpg.personas.personasapi.npc;
 import org.bukkit.Location;
 
 import com.crimsonrpg.flaggables.api.FlaggableManager;
+import org.bukkit.entity.LivingEntity;
 
 /**
  * Represents a manager for {@link NPC}s.
@@ -21,4 +22,11 @@ public interface NPCManager extends FlaggableManager<NPC> {
 
     public void despawnNPC(NPC npc);
 
+    /**
+     * Gets the NPC associated with the given Bukkit entity if it exists.
+     * 
+     * @param entity The Bukkit entity.
+     * @return The NPC associated with the LivingEntity.
+     */
+    public NPC fromBukkitEntity(LivingEntity entity);
 }
