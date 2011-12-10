@@ -11,10 +11,10 @@ import org.bukkit.entity.Player;
 /**
  * Called when an NPC is right-clicked (interacted with)
  */
-public class NPCInteractEvent extends NPCEvent {
+public class NPCRightClickEvent extends NPCEvent {
     private final Player player;
     
-    public NPCInteractEvent(NPC npc, Player player) {
+    public NPCRightClickEvent(NPC npc, Player player) {
         super(EventType.NPC_LEFT_CLICK, npc);
         this.player = player;
     }

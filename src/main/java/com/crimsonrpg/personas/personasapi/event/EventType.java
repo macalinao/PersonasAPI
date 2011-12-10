@@ -16,7 +16,7 @@ public enum EventType {
     
     NPC_LEFT_CLICK,
     
-    NPC_INTERACT,
+    NPC_RIGHT_CLICK,
     
     NPC_SPAWN;
 }
