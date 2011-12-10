@@ -4,12 +4,9 @@
  */
 package com.crimsonrpg.personas.personasapi.npc;
 
-import com.crimsonrpg.flaggables.api.Flag;
 import org.bukkit.Location;
 
 import com.crimsonrpg.flaggables.api.FlaggableManager;
-import com.crimsonrpg.personas.personasapi.persona.Persona;
-import java.util.List;
 import org.bukkit.entity.LivingEntity;
 
 /**
@@ -17,9 +14,11 @@ import org.bukkit.entity.LivingEntity;
  */
 public interface NPCManager extends FlaggableManager<NPC> {
 
-    public NPC createNPC(String name, List<Flag> flags, Persona persona);
+    public NPC createNPC(String name);
 
-    public NPC createNPC(String id, String name, List<Flag> flags, Persona persona);
+    public NPC createNPC(String name, String persona);
+
+    public NPC createNPC(String id, String name, String persona);
 
     public void spawnNPC(String id, Location location);
 

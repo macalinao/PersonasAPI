@@ -23,10 +23,10 @@ public interface NPC<T extends LivingEntity> extends Flaggable {
     /**
      * Sets the persona.
      * 
-     * @param persona
+     * @param persona The name of the persona to set.
      * @return The NPC.
      */
-    public NPC<T> setPersona(Persona persona);
+    public NPC<T> setPersona(String persona);
     
     /**
      * Gets the name of this NPC.
