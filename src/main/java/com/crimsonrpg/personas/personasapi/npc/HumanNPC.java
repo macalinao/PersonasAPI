@@ -4,10 +4,10 @@
  */
 package com.crimsonrpg.personas.personasapi.npc;
 
-import org.bukkit.entity.HumanEntity;
+import org.bukkit.entity.Player;
 
 /**
  * Represents a human NPC.
  */
-public interface HumanNPC extends NPC<HumanEntity> {
+public interface HumanNPC extends NPC<Player> {
 }
