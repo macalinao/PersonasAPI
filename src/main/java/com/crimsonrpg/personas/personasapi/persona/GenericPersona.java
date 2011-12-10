@@ -15,9 +15,14 @@ import com.crimsonrpg.personas.personasapi.event.npc.NPCSpawnEvent;
  * A generic persona.
  */
 public class GenericPersona implements Persona {
-
+    private String name;
+    
+    public GenericPersona(String name) {
+        this.name = name;
+    }
+    
     public String getName() {
-        return "generic";
+        return name;
     }
 
     /**
