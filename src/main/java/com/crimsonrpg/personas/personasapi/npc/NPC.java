@@ -29,6 +29,29 @@ public interface NPC<T extends LivingEntity> extends Flaggable {
     public NPC<T> setPersona(Persona persona);
     
     /**
+     * Gets the name of this NPC.
+     * 
+     * @return The NPC's name
+     */
+    public String getName();
+    
+    /**
+     * Gets the name of this NPC.
+     * 
+     * @param compatible Should the name be compatible with the 16 character entity name limit?
+     * @return The NPC's name
+     */
+    public String getName(boolean compatible);
+    
+    /**
+     * Sets the name of this NPC.
+     * 
+     * @param name The name of the NPC.
+     * @return 
+     */
+    public NPC<T> setName(String name);
+    
+    /**
      * Spawns this NPC at the given location.
      * 
      * @param location The Location to spawn the NPC at.
