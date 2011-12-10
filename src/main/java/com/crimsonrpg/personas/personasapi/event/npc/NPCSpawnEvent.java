@@ -12,6 +12,7 @@ import org.bukkit.Location;
  * Called when an NPC is spawned.
  */
 public class NPCSpawnEvent extends NPCEvent {
+
     private Location location;
 
     public NPCSpawnEvent(NPC npc, Location location) {
@@ -21,5 +22,9 @@ public class NPCSpawnEvent extends NPCEvent {
 
     public Location getLocation() {
         return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
     }
 }

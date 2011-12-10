@@ -11,15 +11,18 @@ import org.bukkit.entity.Player;
 /**
  * Called when an NPC is left-clicked.
  */
-public class NPCLeftClickEvent extends NPCEvent {
-    private final Player player;
-
+public class NPCLeftClickEvent extends NPCPlayerEvent {
+    private boolean damaging = false;
+    
     public NPCLeftClickEvent(NPC npc, Player player) {
-        super(EventType.NPC_LEFT_CLICK, npc);
-        this.player = player;
+        super(EventType.NPC_LEFT_CLICK, npc, player);
     }
 
-    public Player getPlayer() {
-        return player;
+    public boolean isDamaging() {
+        return damaging;
+    }
+
+    public void setDamaging(boolean damaging) {
+        this.damaging = damaging;
     }
 }

@@ -8,11 +8,11 @@ import com.crimsonrpg.personas.personasapi.event.EventType;
 import com.crimsonrpg.personas.personasapi.npc.NPC;
 
 /**
- * Called when an NPC is created.
+ * Called when an NPC is deleted.
  */
-public class NPCCreateEvent extends NPCEvent {
+public class NPCDestroyEvent extends NPCEvent {
 
-    public NPCCreateEvent(NPC npc) {
-        super(EventType.NPC_CREATE, npc);
+    public NPCDestroyEvent(NPC npc) {
+        super(EventType.NPC_DESTROY, npc);
     }
 }

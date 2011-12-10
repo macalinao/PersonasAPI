@@ -5,15 +5,29 @@
 package com.crimsonrpg.personas.personasapi.npc;
 
 import com.crimsonrpg.flaggables.api.Flaggable;
+import com.crimsonrpg.personas.personasapi.persona.Persona;
 import org.bukkit.Location;
-import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.LivingEntity;
 
 /**
  * Represents an NPC.
  */
 public interface NPC<T extends LivingEntity> extends Flaggable {
-
+    /**
+     * Gets the Persona of the NPC.
+     * 
+     * @return The Persona of the NPC.
+     */
+    public Persona getPersona();
+    
+    /**
+     * Sets the persona.
+     * 
+     * @param persona
+     * @return The NPC.
+     */
+    public NPC<T> setPersona(Persona persona);
+    
     /**
      * Spawns this NPC at the given location.
      * 

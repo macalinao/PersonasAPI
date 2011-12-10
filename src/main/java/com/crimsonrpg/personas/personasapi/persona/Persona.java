@@ -5,7 +5,7 @@
 package com.crimsonrpg.personas.personasapi.persona;
 
 import com.crimsonrpg.personas.personasapi.event.npc.NPCCreateEvent;
-import com.crimsonrpg.personas.personasapi.event.npc.NPCDeleteEvent;
+import com.crimsonrpg.personas.personasapi.event.npc.NPCDestroyEvent;
 import com.crimsonrpg.personas.personasapi.event.npc.NPCDespawnEvent;
 import com.crimsonrpg.personas.personasapi.event.npc.NPCLeftClickEvent;
 import com.crimsonrpg.personas.personasapi.event.npc.NPCRightClickEvent;
@@ -32,18 +32,18 @@ public interface Persona {
     public void onNPCCreate(NPCCreateEvent event);
 
     /**
-     * Called when an NPC is deleted.
-     * 
-     * @param event The event to call
-     */
-    public void onNPCDelete(NPCDeleteEvent event);
-
-    /**
      * Called when an NPC is despawned.
      * 
      * @param event The event to call
      */
     public void onNPCDespawn(NPCDespawnEvent event);
+
+    /**
+     * Called when an NPC is destroy.
+     * 
+     * @param event The event to call
+     */
+    public void onNPCDestroy(NPCDestroyEvent event);
 
     /**
      * Called when an NPC is left clicked.

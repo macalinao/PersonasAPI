@@ -21,19 +21,19 @@ public class NPCListener extends CustomEventListener {
     }
 
     /**
-     * Called when an NPC is deleted.
-     * 
-     * @param event The event to call
-     */
-    public void onNPCDelete(NPCDeleteEvent event) {
-    }
-
-    /**
      * Called when an NPC is despawned.
      * 
      * @param event The event to call
      */
     public void onNPCDespawn(NPCDespawnEvent event) {
+    }
+
+    /**
+     * Called when an NPC is deleted.
+     * 
+     * @param event The event to call
+     */
+    public void onNPCDestroy(NPCDestroyEvent event) {
     }
 
     /**
@@ -72,12 +72,12 @@ public class NPCListener extends CustomEventListener {
                 this.onNPCCreate((NPCCreateEvent) event);
                 return;
 
-            case NPC_DELETE:
-                this.onNPCDelete((NPCDeleteEvent) event);
-                return;
-
             case NPC_DESPAWN:
                 this.onNPCDespawn((NPCDespawnEvent) event);
+                return;
+
+            case NPC_DESTROY:
+                this.onNPCDestroy((NPCDestroyEvent) event);
                 return;
 
             case NPC_LEFT_CLICK:

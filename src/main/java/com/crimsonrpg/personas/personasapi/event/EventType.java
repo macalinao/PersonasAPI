@@ -10,9 +10,9 @@ package com.crimsonrpg.personas.personasapi.event;
 public enum EventType {
     NPC_CREATE,
     
-    NPC_DELETE,
-    
     NPC_DESPAWN,
+    
+    NPC_DESTROY,
     
     NPC_LEFT_CLICK,
     
