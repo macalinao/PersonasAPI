@@ -36,12 +36,11 @@ public interface NPC<T extends LivingEntity> extends Flaggable {
     public String getName();
     
     /**
-     * Gets the name of this NPC.
+     * Gets the full name of this NPC.
      * 
-     * @param compatible Should the name be compatible with the 16 character entity name limit?
-     * @return The NPC's name
+     * @return The NPC's full name
      */
-    public String getName(boolean compatible);
+    public String getFullName();
     
     /**
      * Sets the name of this NPC.
